@@ -1,6 +1,6 @@
 <?php
 require 'vendor/autoload.php';
-define("PROJECTPATH", dirname(__DIR__)."/apiumsa");
+define("PROJECTPATH", __DIR__);
 define("IP", $_SERVER['SERVER_NAME']);
 
 function autoloader($className)
