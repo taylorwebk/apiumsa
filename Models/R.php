@@ -18,6 +18,12 @@ class R
     $data['content'] = $content;
     return $data;
   }
+  public static function successF($content)
+  {
+    $data['status'] = "success";
+    $data['Facultades'] = $content;
+    return $data;
+  }
   public static function warning($mensaje)
   {
     $data['status'] = "warning";

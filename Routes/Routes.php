@@ -4,6 +4,6 @@ use \Psr\Http\Message\ResponseInterface as Response;
 use Controllers\MainController as MC;
 $app->get('/', function (Request $req, Response $res)
 {
-  $f = MC::a();
+  $f = MC::getMain();
   return $res->withJson($f);
 });
